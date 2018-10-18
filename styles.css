@@ -630,12 +630,12 @@ html {
   src: local('PT Sans Bold'), url('fonts/PTS75F_W.woff') format('woff');
 }
 
-/*@font-face {*/
-  /*font-family: 'PT Sans Narrow';*/
-  /*font-weight: bold;*/
-  /*src: url('fonts/ptn77f_w.eot');*/
-  /*src: local('PT Sans Narrow Bold'), url('fonts/PTN77F_W.woff') format('woff');*/
-/*}*/
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-weight: bold;
+  src: url('fonts/ptn77f_w.eot');
+  src: local('PT Sans Narrow Bold'), url('fonts/PTN77F_W.woff') format('woff');
+}
 
 /*@font-face {*/
   /*font-family: 'PT Sans';*/
@@ -651,9 +651,9 @@ html {
   /*src: local('PT Sans Narrow Bold'); local('PTSans-NarrowBold'), url(https://fonts.gstatic.com/l/font?kit=BngSUXNadjH0qYEzV7ab-oWlsbg95DiHUfrgRPWySHVRRA&skey=1f20cc7adf7b54b9&v=v9) format('woff2');*/
 /*}*/
 
-@font-face {
-  font-family: 'PT Sans Narrow';
-  font-weight: 700;
-  font-style: normal;
-  src: local('PT Sans Narrow Bold'); local('PTSans-NarrowBold'), url('fonts/font.woff2') format('woff2');
-}
+/*@font-face {*/
+  /*font-family: 'PT Sans Narrow';*/
+  /*font-weight: 700;*/
+  /*font-style: normal;*/
+  /*src: local('PT Sans Narrow Bold'); local('PTSans-NarrowBold'), url('fonts/font.woff2') format('woff2');*/
+/*}*/
