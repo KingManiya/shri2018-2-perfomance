@@ -586,6 +586,8 @@ html {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
+  margin-top: 7px;
+  margin-bottom: -2px;
   font-family: "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .weather__item_outside {
@@ -620,13 +622,20 @@ html {
 .main__greeting {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 @font-face {
   font-family: 'PT Sans';
   font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/l/font?kit=jizfRExUiTo99u79B_mh4OynKj0YySoSp45aWERxVlYG10Qc0jPnB2BVyNxhQXs&skey=a45e760d002c9b10&v=v9) format('woff2');
+  font-weight: bold;
+  src: url('fonts/pts75f_w.eot');
+  src: local('PT Sans Bold'), url('fonts/PTS75F_W.woff') format('woff');
 }
+
+/*@font-face {*/
+  /*font-family: 'PT Sans';*/
+  /*font-style: normal;*/
+  /*font-weight: 700;*/
+  /*src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/l/font?kit=jizfRExUiTo99u79B_mh4OynKj0YySoSp45aWERxVlYG10Qc0jPnB2BVyNxhQXs&skey=a45e760d002c9b10&v=v9) format('woff2');*/
+/*}*/
 
 @font-face {
   font-family: 'PT Sans Narrow';
