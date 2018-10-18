@@ -626,7 +626,7 @@ html {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: bold;
-  src: local('PT Sans Bold'), url('fonts/pts75f_w-1.woff2') format('woff2');
+  src: local('PT Sans Bold'), url('fonts/pts75f_w.woff2') format('woff2');
 }
 
 @font-face {
