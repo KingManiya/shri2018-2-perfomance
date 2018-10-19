@@ -256,8 +256,4 @@ selectOptions.forEach(o => {
     popup.classList.toggle('filter__select-popup_open', false);
     selectButtonText.innerText = e.target.innerText;
   })
-});
-
-document.querySelector('.menu__icon').addEventListener('click', function () {
-  document.querySelector('.menu').classList.toggle('menu_open');
-});
+})
