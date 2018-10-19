@@ -7,12 +7,8 @@ rangeSLider.oninput = function() {
 
 const arrowLeftDevs = document.querySelector('.devices__paginator .paginator__arrow_left');
 const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
-const panelCountDevs = document.querySelectorAll('.devices__panel').length;
 const devices = document.querySelector('.devices');
-const pagiantorDevs = document.querySelector('.devices__paginator');
 let currentPageDevs = 1;
-
-pagiantorDevs.classList.toggle('paginator_hide', panelCountDevs < 7);
 
 arrowRightDevs.addEventListener('click', function () {
     currentPageDevs += 1;
@@ -198,13 +194,10 @@ document.querySelectorAll('.panel_floor').forEach(p => {
 
 const arrowLeftScens = document.querySelector('.scenarios__paginator .paginator__arrow_left');
 const arrowRightScens = document.querySelector('.scenarios__paginator .paginator__arrow_right');
-const panelCountScens = document.querySelectorAll('.scenarios__panel').length;
 const pageCountScens = document.querySelectorAll('.scenarios__page').length;
 const scenarios = document.querySelector('.scenarios');
-const pagiantorScens = document.querySelector('.scenarios__paginator');
 let currentPage = 1;
 
-pagiantorScens.classList.toggle('paginator_hide', panelCountScens <= 9);
 
 arrowRightScens.addEventListener('click', function () {
   if (currentPage < pageCountScens) {

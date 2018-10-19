@@ -492,9 +492,6 @@ html {
 .paginator div {
   width: 16px;
 }
-.paginator_hide {
-  display: none;
-}
 .paginator__arrow {
   background-image: url(assets/arrow_left.svg);
   cursor: pointer;
