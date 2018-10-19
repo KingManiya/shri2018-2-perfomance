@@ -231,9 +231,3 @@ arrowLeftScens.addEventListener('click', function () {
     });
   }
 });
-
-let widths = '';
-window.addEventListener('scroll', function() {
-    widths += document.querySelectorAll('body')[0].offsetWidth;
-    document.querySelector('.stats').innerHTML = widths;
-});

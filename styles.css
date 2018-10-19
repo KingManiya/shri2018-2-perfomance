@@ -586,8 +586,6 @@ html {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
-  /*margin-top: 7px;*/
-  /*margin-bottom: -2px;*/
   font-family: "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .weather__item_outside {
@@ -595,9 +593,6 @@ html {
 }
 .weather__item_cloud-drizzle {
   background: url("assets/cloud-drizzle.webp") 100% 70%/26px no-repeat;
-}
-.stats {
-  opacity: 0;
 }
 .panel__icon {
   width: 24px;
