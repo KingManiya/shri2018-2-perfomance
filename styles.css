@@ -495,12 +495,12 @@ html {
 .paginator_hide {
   display: none;
 }
-.arrow_left {
-  background-image: url(assets/arrow_left.svg);
-}
 .paginator__arrow {
-  opacity: 1;
+  background-image: url(assets/arrow_left.svg);
   cursor: pointer;
+}
+.paginator__arrow_right {
+  transform: rotate(180deg);
 }
 .paginator__arrow:hover {
   opacity: 0.5;
