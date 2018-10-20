@@ -32,59 +32,12 @@ arrowLeftDevs.addEventListener('click', function () {
     }
 });
 
-let curValue;
-let curRotate;
-let maxRotate = 0.42; // 150 градусов
-let minRotate = -0.42; // -150 градусов
-
-const MIN_VALUE = 26;
-const INDICATOR_OFFSET = 265;
-
-const rotateToValue = function(rotate) {
-    return Math.floor((Math.abs(rotate * 360 * 1.73 + INDICATOR_OFFSET) / 53) + MIN_VALUE);
-}
-
-
-/**
- * @param {Number} rotate Количество оборотов от нейтриального положения.
- */
-function setRotate(rotate) {
-    if (rotate > maxRotate) {
-        rotate = maxRotate;
-    } else if (rotate < minRotate) {
-        rotate = minRotate;
-    }
-
-    curRotate = rotate;
-    curValue = rotateToValue(rotate);
-
-    document.querySelector('.modal_knob .modal__value').innerHTML = '+' + curValue;
-    document.querySelector('.knob__value').innerHTML = '+' + curValue;
-    document.querySelector('.knob__indicator').style.strokeDasharray = curRotate * 360 * 1.73 + INDICATOR_OFFSET + ' 629';
-    document.querySelector('.knob__arrow').style.transform = 'rotate(' + (curRotate * 360) + 'deg)';
-}
-// setRotate(0);
-
 document.querySelectorAll('.modal_close').forEach(b => {
     b.onclick = function() {
         document.querySelectorAll('.modal').forEach(m => {
             m.classList.toggle('modal_open', false);
             document.querySelector('body').style.overflow = 'auto';
         });
-    }
-});
-
-const TEMPS = {
-    'manual': -10,
-    'cold': 0,
-    'warm': 23,
-    'hot': 30
-}
-
-document.querySelectorAll('.modal__filter-item_temp').forEach(l => {
-    l.onclick = function() {
-        document.querySelector('.adjust-bar_theme_temp').value = TEMPS[this.id];
-        document.querySelector('.modal_temp .modal__value').innerHTML = TEMPS[this.id] > 0 ? '+' + TEMPS[this.id] : TEMPS[this.id];
     }
 });
 
