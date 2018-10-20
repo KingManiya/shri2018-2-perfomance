@@ -22,7 +22,7 @@ arrowRightScens.addEventListener('click', function () {
     });
 });
 function a(b) {
-    this.event.target.classList.add('paginator__arrow_disabled');
+    document.querySelector(b + '__paginator .paginator__arrow_right').classList.add('paginator__arrow_disabled');
     document.querySelector(b + '__paginator .paginator__arrow_left').classList.remove('paginator__arrow_disabled');
     document.querySelector(b).scroll({
         top: 0,
