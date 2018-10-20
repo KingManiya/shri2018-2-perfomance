@@ -9,7 +9,7 @@ const arrowRightDevs = document.querySelector('.devices__paginator .paginator__a
 
 arrowRightDevs.addEventListener('click', function () {
     const arrowLeftDevs = document.querySelector('.devices__paginator .paginator__arrow_left');
-    arrowLeftDevs.classList.toggle('paginator__arrow_disabled', true);
+    arrowLeftDevs.classList.toggle('paginator__arrow_disabled', false);
     document.querySelector('.devices').scroll({
         top: 0,
         left: 1366,
