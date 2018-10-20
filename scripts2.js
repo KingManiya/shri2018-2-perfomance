@@ -22,34 +22,13 @@ arrowRightScens.addEventListener('click', function () {
     });
 });
 
-// document.querySelectorAll('.modal_close').forEach(b => {
-//     b.onclick = function() {
-//         document.querySelectorAll('.modal').forEach(m => {
-//             m.classList.toggle('modal_open', false);
-//             document.querySelector('body').style.overflow = 'auto';
-//         });
-//     }
-// });
-
 const showModal = function(selector) {
-    document.querySelector(selector).classList.toggle('modal_open', true);
+    document.querySelector(selector).classList.add('modal_open');
     document.querySelector('body').style.overflow = 'hidden';
-}
-
-document.querySelectorAll('.panel_temp').forEach(p => {
-    p.onclick = function() {
-        showModal('.modal_temp');
-    }
-});
+};
 
 document.querySelectorAll('.panel_lamp').forEach(p => {
     p.onclick = function() {
         showModal('.modal_light');
-    }
-});
-
-document.querySelectorAll('.panel_floor').forEach(p => {
-    p.onclick = function() {
-        showModal('.modal_knob');
     }
 });
