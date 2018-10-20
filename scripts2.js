@@ -38,7 +38,6 @@ let maxRotate = 0.42; // 150 градусов
 let minRotate = -0.42; // -150 градусов
 
 const MIN_VALUE = 26;
-const MAX_VALUE = 35;
 const INDICATOR_OFFSET = 265;
 
 const rotateToValue = function(rotate) {
@@ -64,7 +63,7 @@ function setRotate(rotate) {
     document.querySelector('.knob__indicator').style.strokeDasharray = curRotate * 360 * 1.73 + INDICATOR_OFFSET + ' 629';
     document.querySelector('.knob__arrow').style.transform = 'rotate(' + (curRotate * 360) + 'deg)';
 }
-setRotate(0);
+// setRotate(0);
 
 document.querySelectorAll('.modal_close').forEach(b => {
     b.onclick = function() {
