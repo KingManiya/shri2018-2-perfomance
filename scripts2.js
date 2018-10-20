@@ -26,9 +26,3 @@ const showModal = function(selector) {
     document.querySelector(selector).classList.add('modal_open');
     document.querySelector('body').style.overflow = 'hidden';
 };
-
-document.querySelectorAll('.panel_lamp').forEach(p => {
-    p.onclick = function() {
-        showModal('.modal_light');
-    }
-});
