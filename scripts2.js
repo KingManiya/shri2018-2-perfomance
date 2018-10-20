@@ -1,13 +1,13 @@
-// const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
-// arrowRightDevs.addEventListener('click', function () {
-//     const arrowLeftDevs = document.querySelector('.devices__paginator .paginator__arrow_left');
-//     arrowLeftDevs.classList.toggle('paginator__arrow_disabled', false);
-//     document.querySelector('.devices').scroll({
-//         top: 0,
-//         left: 1366,
-//         behavior: 'smooth'
-//     });
-// });
+const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
+arrowRightDevs.addEventListener('click', function () {
+    const arrowLeftDevs = document.querySelector('.devices__paginator .paginator__arrow_left');
+    arrowLeftDevs.classList.toggle('paginator__arrow_disabled', false);
+    document.querySelector('.devices').scroll({
+        top: 0,
+        left: 1366,
+        behavior: 'smooth'
+    });
+});
 
 const arrowRightScens = document.querySelector('.scenarios__paginator .paginator__arrow_right');
 arrowRightScens.addEventListener('click', function () {
@@ -21,10 +21,10 @@ arrowRightScens.addEventListener('click', function () {
         behavior: 'smooth'
     });
 });
-const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
-arrowRightDevs.addEventListener('click', function () {
-    a('.devices');
-});
+// const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
+// arrowRightDevs.addEventListener('click', function () {
+//     a('.devices');
+// });
 
 function a(b) {
     document.querySelector(b + '__paginator .paginator__arrow_right').classList.add('paginator__arrow_disabled');
