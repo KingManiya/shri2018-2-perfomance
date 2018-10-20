@@ -1,10 +1,3 @@
-const output = document.querySelector('.modal__value');
-const rangeSLider = document.querySelector('.adjust-bar.adjust-bar_theme_temp');
-
-// rangeSLider.oninput = function() {
-//     output.innerHTML = this.value > 0 ? '+' + this.value : this.value;
-// }
-
 const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
 
 arrowRightDevs.addEventListener('click', function () {
@@ -69,15 +62,15 @@ arrowRightScens.addEventListener('click', function () {
     }
 });
 
-arrowLeftScens.addEventListener('click', function () {
-    if (currentPage > 1) {
-        currentPage -= 1;
-        arrowRightScens.classList.toggle('paginator__arrow_disabled', currentPage === pageCountScens);
-        arrowLeftScens.classList.toggle('paginator__arrow_disabled', currentPage === 1);
-        scenarios.scroll({
-            top: 0,
-            left: -645,
-            behavior: 'smooth'
-        });
-    }
-});
+// arrowLeftScens.addEventListener('click', function () {
+//     if (currentPage > 1) {
+//         currentPage -= 1;
+//         arrowRightScens.classList.toggle('paginator__arrow_disabled', currentPage === pageCountScens);
+//         arrowLeftScens.classList.toggle('paginator__arrow_disabled', currentPage === 1);
+//         scenarios.scroll({
+//             top: 0,
+//             left: -645,
+//             behavior: 'smooth'
+//         });
+//     }
+// });
