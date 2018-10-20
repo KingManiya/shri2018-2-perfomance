@@ -21,6 +21,11 @@ arrowRightScens.addEventListener('click', function () {
         behavior: 'smooth'
     });
 });
+const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
+arrowRightDevs.addEventListener('click', function () {
+    a('.devices');
+});
+
 function a(b) {
     document.querySelector(b + '__paginator .paginator__arrow_right').classList.add('paginator__arrow_disabled');
     document.querySelector(b + '__paginator .paginator__arrow_left').classList.remove('paginator__arrow_disabled');
