@@ -5,32 +5,17 @@ rangeSLider.oninput = function() {
     output.innerHTML = this.value > 0 ? '+' + this.value : this.value;
 }
 
-const arrowLeftDevs = document.querySelector('.devices__paginator .paginator__arrow_left');
 const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
-const devices = document.querySelector('.devices');
-let currentPageDevs = 1;
 
 arrowRightDevs.addEventListener('click', function () {
-    currentPageDevs += 1;
-    arrowLeftDevs.classList.toggle('paginator__arrow_disabled', currentPageDevs === 1);
-    devices.scroll({
+    const arrowLeftDevs = document.querySelector('.devices__paginator .paginator__arrow_left');
+    arrowLeftDevs.classList.toggle('paginator__arrow_disabled', true);
+    document.querySelector('.devices').scroll({
         top: 0,
         left: 1366,
         behavior: 'smooth'
     });
 });
-
-// arrowLeftDevs.addEventListener('click', function () {
-//     if (currentPageDevs > 1) {
-//         currentPageDevs -= 1;
-//         arrowLeftDevs.classList.toggle('paginator__arrow_disabled', currentPageDevs === 1);
-//         devices.scroll({
-//             top: 0,
-//             left: -1366,
-//             behavior: 'smooth'
-//         });
-//     }
-// });
 
 document.querySelectorAll('.modal_close').forEach(b => {
     b.onclick = function() {
