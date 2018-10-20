@@ -10,15 +10,15 @@ const arrowRightDevs = document.querySelector('.devices__paginator .paginator__a
 const devices = document.querySelector('.devices');
 let currentPageDevs = 1;
 
-// arrowRightDevs.addEventListener('click', function () {
-//     currentPageDevs += 1;
-//     arrowLeftDevs.classList.toggle('paginator__arrow_disabled', currentPageDevs === 1);
-//     devices.scroll({
-//         top: 0,
-//         left: 1366,
-//         behavior: 'smooth'
-//     });
-// });
+arrowRightDevs.addEventListener('click', function () {
+    currentPageDevs += 1;
+    arrowLeftDevs.classList.toggle('paginator__arrow_disabled', currentPageDevs === 1);
+    devices.scroll({
+        top: 0,
+        left: 1366,
+        behavior: 'smooth'
+    });
+});
 
 arrowLeftDevs.addEventListener('click', function () {
     if (currentPageDevs > 1) {
@@ -143,7 +143,7 @@ function setEvtListeners() {
     document.addEventListener('touchmove', dragRotate);
 }
 
-setEvtListeners();
+// setEvtListeners();
 setRotate(0);
 
 document.querySelectorAll('.modal_close').forEach(b => {
