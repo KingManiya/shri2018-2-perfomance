@@ -20,17 +20,17 @@ arrowRightDevs.addEventListener('click', function () {
     });
 });
 
-arrowLeftDevs.addEventListener('click', function () {
-    if (currentPageDevs > 1) {
-        currentPageDevs -= 1;
-        arrowLeftDevs.classList.toggle('paginator__arrow_disabled', currentPageDevs === 1);
-        devices.scroll({
-            top: 0,
-            left: -1366,
-            behavior: 'smooth'
-        });
-    }
-});
+// arrowLeftDevs.addEventListener('click', function () {
+//     if (currentPageDevs > 1) {
+//         currentPageDevs -= 1;
+//         arrowLeftDevs.classList.toggle('paginator__arrow_disabled', currentPageDevs === 1);
+//         devices.scroll({
+//             top: 0,
+//             left: -1366,
+//             behavior: 'smooth'
+//         });
+//     }
+// });
 
 document.querySelectorAll('.modal_close').forEach(b => {
     b.onclick = function() {
