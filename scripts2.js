@@ -21,19 +21,15 @@ arrowRightScens.addEventListener('click', function () {
         behavior: 'smooth'
     });
 });
-const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
-arrowRightDevs.addEventListener('click', function () {
-    a('.devices');
-});
+// const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
+// arrowRightDevs.addEventListener('click', function () {
+//     a('.devices');
+// });
 
 function a(b) {
-    document.querySelector(b + '__paginator .paginator__arrow_right').classList.add('paginator__arrow_disabled');
+    if (b === '.scenarios') document.querySelector(b + '__paginator .paginator__arrow_right').classList.add('paginator__arrow_disabled');
     document.querySelector(b + '__paginator .paginator__arrow_left').classList.remove('paginator__arrow_disabled');
-    document.querySelector(b).scroll({
-        top: 0,
-        left: 1366,
-        behavior: 'smooth'
-    });
+    document.querySelector(b).scrollLeft = 1366;
 }
 function c(d) {
     document.querySelector(d).classList.add('modal_open');
