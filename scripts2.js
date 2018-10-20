@@ -24,7 +24,11 @@ arrowRightScens.addEventListener('click', function () {
 function a(b) {
     this.event.target.classList.add('paginator__arrow_disabled');
     document.querySelector(b + '__paginator .paginator__arrow_left').classList.remove('paginator__arrow_disabled');
-    document.querySelector(b).scrollLeft = 1366;
+    document.querySelector(b).scroll({
+        top: 0,
+        left: 645,
+        behavior: 'smooth'
+    });
 }
 function c(d) {
     document.querySelector(d).classList.add('modal_open');
