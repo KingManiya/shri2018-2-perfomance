@@ -21,8 +21,7 @@ arrowRightScens.addEventListener('click', function () {
         behavior: 'smooth'
     });
 });
-
-const showModal = function(selector) {
-    document.querySelector(selector).classList.add('modal_open');
+function c(d) {
+    document.querySelector(d).classList.add('modal_open');
     document.querySelector('body').style.overflow = 'hidden';
 };
