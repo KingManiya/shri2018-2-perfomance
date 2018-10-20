@@ -22,14 +22,14 @@ arrowRightScens.addEventListener('click', function () {
     });
 });
 
-document.querySelectorAll('.modal_close').forEach(b => {
-    b.onclick = function() {
-        document.querySelectorAll('.modal').forEach(m => {
-            m.classList.toggle('modal_open', false);
-            document.querySelector('body').style.overflow = 'auto';
-        });
-    }
-});
+// document.querySelectorAll('.modal_close').forEach(b => {
+//     b.onclick = function() {
+//         document.querySelectorAll('.modal').forEach(m => {
+//             m.classList.toggle('modal_open', false);
+//             document.querySelector('body').style.overflow = 'auto';
+//         });
+//     }
+// });
 
 const showModal = function(selector) {
     document.querySelector(selector).classList.toggle('modal_open', true);
