@@ -179,7 +179,7 @@
 }
 
 .a116::after {
-    a109: '';
+    content: '';
     display: inline-block;
     min-width: 25px
 }
